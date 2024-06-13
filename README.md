@@ -52,10 +52,6 @@ The data should be put in directories this way:
 ```
 input
 ├── birdclef-2024               # From the competition data
-│   ├── train_metadata.csv      # From the competition data
-│   ├── train_audio             # From the competition data
-│   ├── unlabeled_soundscapes   # From the competition data
-│   └── train_additional.csv    # From ludovick's dataset
 ├── Birdclef20                  # From https://www.kaggle.com/competitions/birdsong-recognition
 ├── Birdclef21                  # From https://www.kaggle.com/competitions/birdclef-2021
 ├── Birdclef22                  # From https://www.kaggle.com/competitions/birdclef-2022
