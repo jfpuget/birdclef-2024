@@ -35,7 +35,9 @@ My code was all in notebooks given the data and the models I used were small and
 
 The code was run with nivida NGC container `nvidia/pytorch:24.02-py3`
 
-I pip installed torchaudio, torchvision and timm packages in that container, then ran the notebooks.
+I pip installed torchaudio, torchvision and timm packages in that container. The exact verisons that were instaleld are in the requirements.txt but there is no real depeendency on these exact versions. Installing these in the above container upgrades torch and other existing packages, exp. cuda toolkit.
+
+The container was run with a 8xV100 GPUs machine (DGX1) but only one of the GPUs is used.
 
 ## Data
 
@@ -68,8 +70,12 @@ The notebook 002 processes this year competition data. For the training data it 
 
 The notebook 210 creates an index of additional data from ludovick's dataset
 
-The notebook 210 processes past competitions data and ludovick's dataset. It only saves data from the same species as this year competition. It also only saves data for species having less than 500 samples in the compeititon data. 
+The notebook 210 processes past competitions data and ludovick's dataset. It only saves data from the same species as this year competition. It also only saves data for species having less than 500 samples in the competititon data. 
 
 The notebook 234 trains 5 first level efficientvit_b0 models then predicts pseudo labels on unlabelled soundscapes. These are saved together with mdoel checkpoints in a directory printed near the start of the notebook. That directory needs to be cut and past into the next notebook.
 
 The notebook 237 trains 5 second level efficientvit_b0 models. The pseudo labels for unlabelled soundscapes are read from the directory populated by the notebook 234. That directory must be set as the value of `cfg.pl` in the first cell of notebook 237.
+
+The resulting checkpoints were submitted in the competition and yield a private LB score of 00.689566 which would have got 3rd place : https://www.kaggle.com/cpmpml/birdclef24-237
+
+We had better unselected submissions, but what matters is what we selected. 
