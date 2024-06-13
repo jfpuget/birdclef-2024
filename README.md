@@ -60,11 +60,16 @@ input
 ├── checkpoints                 # populated by notebooks 234 and 237
 └── birdclef_data               # created and populated by notebook 002 and 210
 ```
+## Running the solution
 
-The notebookd 002 processes this year competition data. For the training data it saves numpy versions of 10 second clips from the start and the end of each record. It also saves each sourdscape data as a numpy array.
+Once the data is downloaded and unzipped in the above directories, run the notebooks in the following order.
 
-The notebook 210 processes past competitions data and additional data from Xeno Canto. It only saves data from the same species as this year competition. It also only saves data for species having less than 500 samples in the compeititon data. 
+The notebook 002 processes this year competition data. For the training data it saves numpy versions of 10 second clips from the start and the end of each record. It also saves each sourdscape data as a numpy array.
+
+The notebook 210 creates an index of additional data from ludovick's dataset
+
+The notebook 210 processes past competitions data and ludovick's dataset. It only saves data from the same species as this year competition. It also only saves data for species having less than 500 samples in the compeititon data. 
 
 The notebook 234 trains 5 first level efficientvit_b0 models then predicts pseudo labels on unlabelled soundscapes. These are saved together with mdoel checkpoints in a directory printed near the start of the notebook. That directory needs to be cut and past into the next notebook.
 
-The notebook 237 trains 5 second level efficientvit_b0 models. pseudo labels for unlabelled s9undscapes are read from the directory populated by the previous notebook. That directory must be set as the value of `cfg.pl` in the first cell.
+The notebook 237 trains 5 second level efficientvit_b0 models. The pseudo labels for unlabelled soundscapes are read from the directory populated by the notebook 234. That directory must be set as the value of `cfg.pl` in the first cell of notebook 237.
