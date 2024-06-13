@@ -35,7 +35,7 @@ My code was all in notebooks given the data and the models I used were small and
 
 The code was run with nivida NGC container `nvidia/pytorch:24.02-py3`
 
-I pip installed torchaudio, torchvision and timm packages in that container. The exact verisons that were instaleld are in the requirements.txt but there is no real depeendency on these exact versions. Installing these in the above container upgrades torch and other existing packages, exp. cuda toolkit.
+I pip installed torchaudio, torchvision and timm packages in that container. The exact versions that were installed are in the requirements.txt but there is no real dependency on these exact versions. Installing these in the above container upgrades torch and other existing packages, exp. cuda toolkit.
 
 The container was run with a 8xV100 GPUs machine (DGX1) but only one of the GPUs is used.
 
@@ -66,11 +66,11 @@ input
 
 Once the data is downloaded and unzipped in the above directories, run the notebooks in the following order.
 
-The notebook 002 processes this year competition data. For the training data it saves numpy versions of 10 second clips from the start and the end of each record. It also saves each sourdscape data as a numpy array.
+The notebook 002 processes this year's competition data. For the training data it saves numpy versions of 10 second clips from the start and the end of each record. It also saves each soundscape data as a numpy array.
 
 The notebook 210 creates an index of additional data from ludovick's dataset
 
-The notebook 210 processes past competitions data and ludovick's dataset. It only saves data from the same species as this year competition. It also only saves data for species having less than 500 samples in the competititon data. 
+The notebook 210 processes past competitions data and ludovick's dataset. It only saves data from the same species as this year's competition. It also only saves data for species having less than 500 samples in the competition data. 
 
 The notebook 234 trains 5 first level efficientvit_b0 models then predicts pseudo labels on unlabelled soundscapes. These are saved together with mdoel checkpoints in a directory printed near the start of the notebook. That directory needs to be cut and past into the next notebook.
 
