@@ -6,7 +6,7 @@ Solution to Birdclef 2024 challenge on Kaggle, CPMP part. The full solution is d
 
 Our pipeline is summarized below. A key ingredient of our solution is to use unlabeled soundscapes for pseudo labeling and model distillation. A number of models were trained with the training data, then used to predict labels on 5 second clips from unlabelled soundscapes. These were added to the original training data to train a new set of models used for the final submission. 
 
-![](pipe.png)
+![](./pipe.png)
 
 ### Data
 
