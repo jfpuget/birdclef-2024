@@ -68,7 +68,7 @@ Once the data is downloaded and unzipped in the above directories, run the noteb
 
 The notebook 002 processes this year's competition data. For the training data it saves numpy versions of 10 second clips from the start and the end of each record. It also saves each soundscape data as a numpy array.
 
-The notebook 210 creates an index of additional data from ludovick's dataset
+The notebook 135 creates an index of additional data from ludovick's dataset
 
 The notebook 210 processes past competitions data and ludovick's dataset. It only saves data from the same species as this year's competition. It also only saves data for species having less than 500 samples in the competition data. 
 
