@@ -1,6 +1,6 @@
 # birdclef-2024 - CPMP's part
 
-Solution to Birdclef 2024 challenge on Kaggle, CPMP part. The full solution is described in [Kaggle forums](https://www.kaggle.com/competitions/birdclef-2024/discussion/511905). This is team work with Christof Henkel and Theo Viel.
+Solution to Birdclef 2024 challenge on Kaggle, CPMP part. The full solution is described in [Kaggle forums](https://www.kaggle.com/competitions/birdclef-2024/discussion/511905). This is team work with Christof Henkel and [Theo Viel](https://github.com/TheoViel/kaggle_birdclef2024).
 
 ## Introduction 
 
