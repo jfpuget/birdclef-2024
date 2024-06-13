@@ -51,17 +51,18 @@ The data needs to be downloaded from Kaggle. It includes data from these competi
 The data should be put in directories this way:
 ```
 input
-├── birdclef-2024              # From the competition data
-│   ├── train_metadata.csv     # From the competition data
-│   ├── train_audio            # From the competition data
-│   ├── unlabeled_soundscapes  # From the competition data
-│   └── train_additional.csv   # From ludovick's dataset
-├── Birdclef20               # From https://www.kaggle.com/competitions/birdsong-recognition
-├── Birdclef21               # From https://www.kaggle.com/competitions/birdclef-2021
-├── Birdclef22               # From https://www.kaggle.com/competitions/birdclef-2022
-├── Birdclef23               # From https://www.kaggle.com/competitions/birdclef-2023
-├── checkpoints              # populated by notebooks 234 and 237
-└── birdclef_data            # created and populated by notebook 002 and 210
+├── birdclef-2024               # From the competition data
+│   ├── train_metadata.csv      # From the competition data
+│   ├── train_audio             # From the competition data
+│   ├── unlabeled_soundscapes   # From the competition data
+│   └── train_additional.csv    # From ludovick's dataset
+├── Birdclef20                  # From https://www.kaggle.com/competitions/birdsong-recognition
+├── Birdclef21                  # From https://www.kaggle.com/competitions/birdclef-2021
+├── Birdclef22                  # From https://www.kaggle.com/competitions/birdclef-2022
+├── Birdclef23                  # From https://www.kaggle.com/competitions/birdclef-2023
+├── birdclef2024-additional-mp3 # From ludovick's dataset
+├── checkpoints                 # populated by notebooks 234 and 237
+└── birdclef_data               # created and populated by notebook 002 and 210
 ```
 
 The notebookd 002 processes this year competition data. For the training data it saves numpy versions of 10 second clips from the start and the end of each record. It also saves each sourdscape data as a numpy array.
